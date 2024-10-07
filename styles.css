@@ -1,0 +1,323 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: pink;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    background-color: aquamarine !important;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.main-content-wrapper {
+    width: 70%;
+    padding: 20px;
+    border: 1px solid #ccc; 
+    background-color: #fff; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.main-content {
+    padding: 20px;
+}
+
+/* Profile Section */
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: block;
+    margin: 0 auto;
+}
+
+.profile h2 {
+    margin: 10px 0;
+}
+
+.menu {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    margin: 5px 0;
+}
+
+/* Divider */
+.divider {
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+/* Projects and Experience */
+.projects, .experience, .education, .reviews {
+    margin: 20px 0;
+}
+
+.projects a, .experience a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Education Section */
+.education-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.education-content {
+    text-align: center;
+}
+
+.education-content p {
+    margin: 5px 0;
+}
+
+/* Review Section */
+.review-box {
+   
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    
+}
+
+/* Main Content Section */
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-section img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.header-section h2 {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.header-section .menu {
+    text-align: right;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 28px;
+    margin: 20px 0 10px;
+}
+
+.main-subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+
+.three-column {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc; 
+    padding: 10px;
+}
+
+.column {
+    width: 30%;
+    border: 1px solid #ccc; 
+    padding: 10px;
+}
+
+.column-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.column p {
+    margin: 5px 0;
+    border-top: 1px solid #ccc; 
+    padding-top: 5px;
+}
+
+.column a {
+    color: blue;
+    text-decoration: underline;
+}
+
+
+.reviews-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.reviews-section .review-box {
+    display: inline-block;
+    width: 30%;
+    padding: 10px;
+    margin: 1px;
+  
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+
+.footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        margin-bottom: 20px;
+    }
+
+    .main-content-wrapper {
+        width: 100%;
+    }
+
+    .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-section .menu {
+        margin-top: 10px;
+    }
+
+    .three-column {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .reviews-section .review-box {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
+
+ .divider {
+            border-bottom: 1px solid #ccc; 
+            margin: 10px 0; 
+        }
+        .menu p {
+            margin: 0; 
+            text-align: center;
+        }
+        .item-title {
+            font-weight: bold;
+            margin: 10px 0 5px; 
+            text-align: left;
+        }
+        .item-content {
+            margin-bottom: 10px; 
+            text-align: left;
+        }
+        .main-content .header-section img {
+            display: block;
+            margin: 0; 
+        }
+        .header-section h2 {
+            text-align: left; 
+            margin-top: 10px; 
+        }
+        .menu {
+            text-align: right; 
+        }
+        .menu a {
+            margin-left: 10px; 
+        }
+        .three-column {
+            display: flex;
+            justify-content: space-between; 
+            text-align: center
+        }
+        .title-section {
+            margin: 20px 0; 
+        }
+        .education-content {
+            text-align: left; 
+            list-style-type: disc; 
+            margin-left: 20px;
+        }
+
+        .divider {
+            border-bottom: 1px solid #ccc; 
+            margin: 10px 0; 
+        }
+        .menu p {
+            margin: 0; 
+            text-align: center;
+        }
+        .item-title {
+            font-weight: bold;
+            margin: 10px 0 5px; 
+            text-align: left;
+        }
+        .item-content {
+            margin-bottom: 10px; 
+            text-align: left;
+        }
+        .main-content .header-section img {
+            display: block;
+            margin: 0; 
+        }
+        .header-section h2 {
+            text-align: left; 
+            margin-top: 10px; 
+        }
+        .menu {
+            text-align: center; 
+        }
+        .menu a {
+            margin-left: 10px; 
+        }
+        .three-column {
+            display: flex;
+            justify-content: space-between; 
+            
+        }
+        .title-section {
+            margin: 20px 0; 
+        }
+        .education-content {
+            text-align: left; 
+            list-style-type: disc; 
+            margin-left: 20px;
+        }      
